@@ -1,0 +1,98 @@
+/* 轮播图 */
+.banner{
+    overflow: hidden;
+    margin:0 auto;
+    position:relative;
+    height: 351px;
+}
+.bannerImg{
+    position:absolute;
+    width:999999px;
+    left:0;
+}
+.bannerImg li{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.bannerImg img{
+    width:100%;
+}
+.round{
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.round li{
+    float: left;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background: #ffffff;
+    text-align: center;
+    margin: 0 6px;
+    cursor: pointer;
+}
+.round .active{
+    background: #2a6c90;
+}
+/* 主体内容 */
+.nextPage p{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image:url("../images/icons.png");
+    background-repeat:no-repeat;
+    width: 28px;
+    height: 39px;
+    border: 1px solid #fff;
+}
+.nextPage p.leftPrev{
+    left: 12px;
+    background-position: 4px 8px;
+}
+.nextPage p.rightPrev{
+    right:12px;
+    background-position: 6px -32px;
+}
+.rightImg{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.newstudent{
+    width:100%;
+    margin:0 auto;
+    max-width: 750px;
+}
+.newstudent h5{
+    text-align: center;
+    margin: 32px 0 22px -115px;
+    font-size: 24px;
+}
+.newstudentimg{
+    display: flex;
+    justify-content: space-between;
+}
+.newstudentimg img{
+    width: 36%;
+}
+.newstudenttext{
+    margin: 0 0 0 42px;
+    width: 55%;
+}
+.newstudenttext a{
+    line-height: 46px;
+    background: #ccdae1;
+    margin-bottom: 27px;
+    font-size: 16px;
+    padding: 0 2px;
+    display:block;
+}
+.newstudenttext a:last-child{
+    margin-bottom:0;
+}
